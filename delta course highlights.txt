@@ -1,0 +1,16 @@
+> Paragraph Element
+> Heading Element
+> Lists
+> Attributes
+> Anchor Tag
+> Image Tag
+> Inline v/s Block
+> Div
+> Span
+> Hr
+> Sub and Sup
+> Semantic 		>> SEO - search Engine Optimisation
+>Tags>>article-section-aside
+> HTML Entities
+> Tables in HTML>Colspan=Rowspan
+> Forms in HTMLs>Input>Placeholders+Labels>Button+Name Attribute > Checkbox 

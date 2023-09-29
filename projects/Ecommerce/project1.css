@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+}
+.header1 li{
+    display: inline;
+    /* text-align: right; */
+    margin: 20px;
+    font-size: 30px;
+
+}
+.navigation{
+    width: 600px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    width: 90px;
+    font-size: 1.5em;
+    background-color: transparent;
+    text-align: center;
+
+}
+.nav{
+    width: 90px;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 1.5em;
+    /* display: inline-block; */
+    border-radius: 5px;
+    background-color: transparent;
+}
+.nav:hover{
+    background-color: lightcoral;
+}
+.header1{
+    height: 70px;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* nav{
+    text-align: right;
+    left: 800px;
+    position: fixed;
+    display: block;
+} */
+header li a{
+    text-decoration:unset ;
+    color: white;
+}
+header ul{
+    text-align: right;
+}
+
+#banner{
+    height: 100vh;
+    width: 100%;
+    background-image: url(background.jpg);
+    /* background-size: cover; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#header{
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#header h1{
+    font-size: 5em;
+}
+
+#header h4{
+    font-size: 30px;
+}
+.Product{
+    height: 520px;
+    width: 450px;
+    border-radius: 20px;
+}
+.btn{
+    font-size: 20px;
+    height: 40px;
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin: 10px 20px;
+    box-shadow: 2px 2px 10px black;
+    transition: box-shadow 1s ease-in 0.1s;
+}
+.btn:hover{
+    background-color: aqua;
+    box-shadow: 4px 4px 20px black;
+}
+#Featured h3{
+    margin-left: 30px;
+    font-size: 3em;
+}
+.feature{
+    height: 100%;
+    border-radius: 10px;
+}
+#Featured{ 
+    height: 600px;
+    width: 100%;
+}
+.smallcontainer{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.col{
+    height: 500px;
+    width: 300px;
+    background-image: url(gallery-1.jpg);
+    background-size: cover;   
+    border-radius: 15px;
+
+}
+.pro{
+    height: 600px;
+    width: 400px;
+    background-image: url(gallery-1.jpg);
+    background-size: cover;
+    border-radius: 15px;
+
+}
+.space{
+    height: 200px;
+    width: 100%;
+}
+.pro2{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin: 0px 30px;
+}
+.pro1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.feature + h4{
+    margin: unset;
+}
+.col > p{
+    margin: unset;
+}
+
+.column{
+    height: 400px;
+    width: 20%;
+    transition: transform 0.5s ease-in-out 0.1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.column:hover{
+    transform: translateY(-10px);
+}
+.offer{
+    height: 600px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: flex-ends;
+
+}
+.img{
+    height: 400px;
+    width: 300px;
+    background-image: url(gallery-1.jpg);
+    background-size: cover;
+    box-shadow: 2px 2px 10px black;
+}
+.offercontent{
+    height: 400px;
+    width: 40%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.offercontent > h1,h4{
+    background-color: transparent;
+}
+
+.offercontent h1{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.offercontent h4{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+
+}
+.containeroffer{
+    height: 400px;
+    width: 65%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+}
+
+#buttn{
+    height: 75px;
+    font-size: 2.5em;
+    width: 300px;
+    border-radius: 20px;
+    text-decoration: underline;
+}
+.footer{
+    height: 400px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#sec1{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.sec{
+    height: 300px;
+    width: 250px;
+    font-family: Barlow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+#sec1-cont{
+    margin-top: 20px;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 100;
+
+}
+.logo{
+    height: 75px;
+    width: 200px;
+    text-align: center;
+}
+.logo h1{
+    font-size: 30px;
+}
+
+#sec2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sec3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec2-cont ul{
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+.sec2-cont ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-family: Barlow;
+}
+.sec2-cont i{
+    font-weight: bold;
+    margin-right: 10px;
+}
+.sec2-cont span{
+    margin-left: 20px;
+}
+#sec3 h2{
+    text-transform: uppercase;
+}
+.sec3-cont ul{
+    margin-top: 30px;
+    /* text-transform: uppercase; */
+}
+.sec3-cont ul li{
+    list-style: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-family: Barlow;
+}
+.sec3-cont ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.sec3-cont ul i{
+    margin-right:5px ;
+}
+#sec4{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+}
+#sec4 a{
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: Barlow;
+    text-decoration: none;
+    color: black;
+}
+#sec4 a i{
+    margin-right: 10px;
+    opacity: 0.9;
+    transition: all 0.2s linear;
+}
+
+#sec4 a i:hover{
+    font-size: 1.3rem;
+    opacity: 1;
+}

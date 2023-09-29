@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assest/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="spotifyclone.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="sidebar-nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="option">
+                    <div class="lib-option nav-option">
+                        <img src="./assest/library_icon.png" alt="">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="lib-icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-boxes">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated you on episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./assest/backward_icon.png" alt="" class="hide">
+                    <img src="./assest/forward_icon.png" alt="">
+                </div>
+                <div class="sticky-nav-options">
+                    <div class="badge sticky-nav-item hide">Explore Premium</div>
+                    <div class="badge sticky-nav-item dark-badge"><i class="fa-solid fa-download" style="margin-right: 0.5rem;"></i>Install App</div>
+                    <i class="fa-regular fa-user sticky-nav-item"></i>
+                </div>
+            </div>
+
+            <h2>Recently Played</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assest/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top50 - Global</p>
+                    <p class="card-info">Your daily updates of the played tracks...</p>
+                </div>
+            </div>
+            
+            <h2>Trending now near you</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assest/card2img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top50 - Global</p>
+                    <p class="card-info">Your daily updates of the played tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="./assest/card3img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top50 - Global</p>
+                    <p class="card-info">Your daily updates of the played tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="./assest/card4img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top50 - Global</p>
+                    <p class="card-info">Your daily updates of the played tracks...</p>
+                </div>
+            </div>
+
+            <h2>Featured Charts</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assest/card1img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top50 - Global</p>
+                    <p class="card-info">Your daily updates of the played tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="./assest/card6img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top Song - India</p>
+                    <p class="card-info">Your daily updates of the played tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="./assest/card5img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top50 - Global</p>
+                    <p class="card-info">Your daily updates of the played tracks...</p>
+                </div>
+                <div class="card">
+                    <img src="./assest/card5img.jpeg" alt="" class="card-img">
+                    <p class="card-title">Top50 - Global</p>
+                    <p class="card-info">Your daily updates of the played tracks...</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="player-left">
+                <img src="https://a10.gaanacdn.com/images/albums/12/3781012/crop_480x480_3781012.jpg" alt="" class="song-img">
+                <div class="player-left-text">
+                    <p class="song-title">Black Life</p>
+                    <p class="singer">Navaan Sidhu</p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+                <img src="./assest/album_icon2.png" alt="" style="height: 1.85rem; margin-left: 1rem;">
+            </div>
+            <div class="player">
+                <div class="player-control">
+                    <img src="./assest/player_icon1.png" alt="" class="player-icon">
+                    <img src="./assest/player_icon2.png" alt="" class="player-icon">
+                    <img src="./assest/player_icon3.png" alt="" class="player-icon" style="height: 2rem; opacity: 1;">
+                    <img src="./assest/player_icon4.png" alt="" class="player-icon">
+                    <img src="./assest/player_icon5.png" alt="" class="player-icon">
+                </div>
+                <div class="playback-bar">
+                    <span>00:00</span>
+                    <input type="range" min="0" max="100" id="" class="progress-bar">
+                    <span>3:30</span>
+                </div>
+            </div>
+            <div class="player-tools">
+                <img src="./assest/controls_icon1.png" alt="" class="tool-icon" style="height: 2.2rem;">
+                <img src="./assest/controld_icon2.png" alt="" class="tool-icon" style="height: 2.2rem;">
+                <img src="./assest/controls_icon3.png" alt="" class="tool-icon" style="height: 1.6rem;">
+                <img src="./assest/controls_icon4.png" alt="" class="tool-icon">
+                <img src="./assest/controls_icon5.png" alt="" class="tool-icon" style="height: 2.2rem; margin-right: 0.5rem;">
+                <input type="range" min="0" max="100" name="" id="" class="tool-volume">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

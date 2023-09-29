@@ -1,0 +1,64 @@
+
+#transition{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(255,0,0);
+    /* transition: 1s; */
+    /* transition-delay: 3s; */
+    margin: 0px auto;
+    border-radius: 50%;
+    transition: margin-top 2s ease 0.2s;
+
+}
+#transition:hover{
+    background-color: blue;
+    /* margin-top: 400px; */
+}
+#opacity{
+    background-color: yellow;
+    opacity: 0.5;
+}
+section div{
+    height: 96px;
+    width: 200px;
+    background-color:lightseagreen;
+    border: 2px solid black;
+    margin: 50px auto;
+    text-align: center;
+    transition: transform 0.3s ease-in-out 0.2s;
+}
+
+section div:nth-of-type(2n){
+    background-color: yellow;
+}
+section div:nth-of-type(3n){
+    background-color: violet;
+}
+#one{
+    /* transform: rotate(45deg) ; */
+}
+#two{
+    /* transform:scale(2); */
+    /* transform: scale(2,0.5); */
+    /* transform: scaleX(2); */
+}
+#one:hover{
+    transform: rotate(540deg);
+}
+.num:hover{
+    transform: translateX(30px);
+}
+#five:hover{
+    box-shadow: 2px 2px 10px black;
+}
+
+div{
+    height: 700px;
+    width: 1200px;
+    margin: 20px auto;
+    background-color: gray;
+    background-image: url("backimg.jpg");
+    /* background-size: contain; */
+    background-size: cover;
+    /* background-size: auto; */
+}

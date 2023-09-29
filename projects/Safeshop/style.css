@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.panel1{
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    color: #7e7e7e;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 0.8rem; 
+}
+.panel1-content a{
+    color: #7e7e7e;
+    margin-right: 0.8rem;
+}
+.panel1-content-link::before{
+    content: '|';
+    margin-right: 1rem;
+    font-weight: bold;
+    color: #dedfe2;
+}
+.panel1-help a{
+    font-weight: bold;
+    color: #3bb77e;
+}
+.panel1-name{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.panel2{
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #7e7e7e5c;
+    border-top: 1px solid #7e7e7e5c;
+    justify-content: space-around;
+}
+.panel2-search{
+    width: 50%;
+    display: flex;
+    border: 2px solid lightgreen;
+    border-radius: 0.5rem;
+    padding: 0.1rem 1rem;
+
+}
+.panel2-search select{
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+}
+.panel2-search input{
+    border-style: none;
+    width: 100%;
+    font-size: 1rem;
+    height: 2.5rem;
+    text-align: center;
+}
+.panel2-options{
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.panel2-option-icon i{
+    font-size: 1.5rem;
+    margin-right: 0.8rem;
+}
+.panel2-search-icon{
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+.panel3{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #7e7e7e5c;
+    padding: 1rem;
+    justify-content: space-between;
+}
+.panel3-options{
+    display: flex;
+    align-items: center;
+}
+.panel3-options select{
+    border: none;
+    background-color: #3bb77e;
+    height: 3rem;
+    width: 13rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 1rem;
+}
+.panel3-options-content a{
+    font-size: 1rem;
+    margin-right: 1rem;
+    color: #253d4e;
+    font-weight: bold;
+}
+.panel3-homeicon{
+    margin-right: 0.5rem;
+}
+.panel3-whatsapp{
+    display: flex;
+    align-items: center;
+}
+.panel3-whatsapp i{
+    font-size: 2.1rem;
+    margin-right: 0.5rem;
+}
+.panel3-whatsapp-number{
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+}
+.panel3-whatsapp-number a{
+    font-size: 1.3rem;
+    color: #3bb77e;
+    font-weight: bold;
+}
+.panel4{
+    padding: 2rem;
+    height: 600px;
+    background: url("https://www.safeshopindia.com/app/_next/static/media/banner-12.216d3b35.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.panel4-img-one{
+    height: 500px;
+    width: 65%;
+    background-image: url("./assets/img1.png");
+    background-size: cover;
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+}
+.panel4-img-one h1{
+    color: #253d4e;
+    font-size: 5rem;
+    font-weight: bold;
+}
+.panel4-img-one h3{
+    color: #7e7e7e;
+    margin-bottom: 2rem;
+}
+
+.panel4-img-two{
+    height: 500px;
+    width: 35%;
+    background-image: url("./assets/img2.png");
+    background-size: cover;
+    border-radius: 1rem;
+    margin-left: 1.5rem;
+    padding: 3rem 2rem;
+}
+
+.panel4-img-two-cont h1{
+    font-weight: bold;
+    width: 8rem;
+    margin-bottom: 2rem;
+}
+.panel4-img-two-cont span{
+    color: #3bb77e;
+    font-weight: bold;
+}
+
+.panel5{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+.panel5-img1{
+    background-image: url("./assets/img3.png");
+    background-size: cover;
+}
+.panel5-img2{
+    background-image: url("./assets/img4.png");
+    background-size: cover;
+}
+.panel5-img3{
+    background-image: url("./assets/img5.png");
+    background-size: cover;
+}
+.panel5-img{
+    height: 250px;
+    width: 450px;
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+.panel5-img-cont{
+    height: 3rem;
+    width: 16rem;
+}
+.panel5-img-cont h4{
+    margin-bottom: 2rem;
+}
+.panel6{
+    padding: 1rem;
+}
+
+.panel6>span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.panel6-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.panel6-card{
+    width: 275px;
+    height: 400px;
+    border: 1px solid #7e7e7e5c;
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: all 0.2s ease-in;
+    margin: 0.6rem;
+}
+.panel6-card:hover{
+    box-shadow: 2px 0px 7px #7e7e7e5c;
+}
+.panel6-card-img{
+    display: flex;
+    justify-content: center;
+}
+.panel6-card img{
+    border-radius: 1rem;
+    height: 200px;
+    width: 200px;
+}
+.panel6-card-cont{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.panel6-card-cont h5{
+    color: #3bb77e;
+    font-size: 0.8rem;
+}
+.panel6-card-cont h3{
+    color: #253d42;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.panel6-card-cart{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-content{
+    padding-top: 2rem;
+    height: 500px;
+    background-color: #e4d9d95c;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-element{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-element a{
+    color: #253d42;
+    margin-bottom: 1rem;
+}
+.footer-element h2{
+    font-weight: bold;
+    color: #253d42;
+    margin-bottom: 1rem;
+}
+.followus{
+    height: 100px;
+    background-color: #e4d9d95c;
+    border-top: 1px solid #7e7e7e5c;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+}   
+.followus i{
+    opacity: 0.8;
+}
+.followus i:hover{
+    opacity: 1;
+}

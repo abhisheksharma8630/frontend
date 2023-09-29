@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>DOM</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<!-- <h1>Spider Man</h1>
+<img src="data:image/jpeg;base64,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" id="mainImg">
+<h2>About</h2>
+<p>
+ <b>Spider Man</b> is a superhero appearing  in American comic books 
+ published by<a href="https://www.google.com/saerch?q=Marvel+Comics">Marvel Comics</a>.
+ Created by the writer-editor <b>Stan Lee</b> and <b>Stan Ditko</b>, he first appeared im the  anthology comic book
+ <a href="https://www.google.com/saerch?q=Amazing+Fantasy">Amazing Fantasy</a>
+ #15 (August 1962) in the comic book
+ <a href="#">Silver Age of Comic book.          </a>He has been featured in comic books, television shows, films, video games etc.
+</p> 
+<div class="box">
+ <h4>Publication Info</h4>
+ <ul>
+  <li><a href="#" class="boxLink">Publisher</a></li>
+  <li><a href="#" class="boxLink">First Appearance</a></li>
+  <li>
+   Created by
+   <ul>
+    <li><a href="#" class="boxLink">Stan Lee</a></li>
+    <li><a href="#" class="boxLink">Stan Ditko</a></li>
+   </ul>
+  </li>
+ </ul>
+</div>
+<h2> Creation and Development</h2>
+<p id="description">
+ In 1962, with the success of the Fantastic Four, Marvel Comics editor and head writer Stan Lee was casting for a new superhero idea. He said idea  for Spider-Man arose from a surge in teenage demand for coimc books and desire to create a character with whom teenager could identify.As with the Fantastic Four, Lee saw an opportunity "to get out of  his system" what he felt was missing in comics books.
+</p>
+<div class="images">
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOy_QLgeRBnkk3p2qsVlC9-E6dnnkibZKQ8g&usqp=CAU" class="oldImg">
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOy_QLgeRBnkk3p2qsVlC9-E6dnnkibZKQ8g&usqp=CAU" class="oldImg" >
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOy_QLgeRBnkk3p2qsVlC9-E6dnnkibZKQ8g&usqp=CAU" class="oldImg" >
+</div> -->
+<!-- <button>Click me!</button>
+<button>Click me 2!</button>
+<button>Click me 3!</button>
+<button>Click me 4!</button> -->
+
+<!-- <h3>Generate a random color</h3>
+<button>Generate color</button>
+<br><br>
+<div>This is your new color...</div> -->
+<!-- <input type="text" name="" id="" placeholder="Enter your name">
+<button>Click me</button> -->
+
+<!-- <form action="/action">
+    <input type="text" name="" id="user" placeholder="username">
+    <input type="password" name="" id="pass" placeholder="password">
+    <button>Register</button>
+</form> -->
+<!-- <div>Hello G43U375WBNoebKSyRUFlxI3l7tdRcqNHA1KeI4ibcBtHfG62R5
+    <h3>Hello</h3>
+    <div>byye</div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore sint quo exercitationem sit impedit, doloribus tempora nemo quidem aliquid possimus, harum quod suscipit, qui quasi! Qui quos itaque neque vero rem eum, aliquid sint doloremque harum? Nam soluta quaerat consequatur totam accusamus hic, necessitatibus et quia. Impedit, commodi enim nihil beatae rerum obcaecati sint cupiditate error, soluta iusto eos omnis exercitationem sit! Excepturi amet culpa magni ullam maxime doloribus, voluptatum quibusdam velit fuga doloremque natus quis perferendis tempora cumque modi totam provident quos nihil. Repudiandae, natus impedit? Delectus, necessitatibus ducimus id vero repellat perspiciatis porro quis molestiae neque voluptas amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure recusandae facere et quis quasi dolorum sunt eveniet accusantium nam blanditiis magnam laborum, reprehenderit voluptates suscipit cumque inventore error. Totam nemo dignissimos similique dolores minus aperiam possimus repudiandae. Quasi laboriosam accusantium neque id odio excepturi veniam ab temporibus possimus, aliquam aut quas, alias ea sed, hic maiores suscipit vitae nulla illo molestias similique facere asperiores. Nostrum sint, esse sapiente a eligendi, veniam soluta reiciendis quam quibusdam animi quia perspiciatis dignissimos consequuntur laborum, pariatur nesciunt repellendus ratione deleniti voluptatem officia aliquam? Ad laborum illo recusandae ipsam a, sunt consequatur dignissimos, quidem tempore non id magnam perferendis ratione nulla natus quo inventore harum? Repellat corrupti deserunt, a est quidem, deleniti eum repudiandae cumque, libero sint atque dolorum harum sit consequatur ea aut accusantium saepe? Dolorem magnam exercitationem aliquam illum a, repudiandae culpa, sunt excepturi assumenda odit laudantium inventore? Excepturi veniam voluptates maiores cumque quae, ducimus delectus eius accusantium inventore beatae earum asperiores aut? Obcaecati ducimus veniam nulla sint fugiat amet velit laborum optio a omnis. Ad molestiae praesentium velit iusto officia molestias nam perferendis excepturi rerum ipsam deleniti maxime sint quibusdam, tempora aliquam modi blanditiis, dolore aut veniam, consequuntur expedita ea cum.</p>
+</div> -->
+<h2>Todo App</h2>
+<input type="text" placeholder="Enter your task" id="">
+<button>Add task</button>
+<ul>
+    <li>Eat <button>delete</button></li>
+    <li>Sleep <button>delete</button></li>
+<!-- <div>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+</div> -->
+</ul>
+<script src="app.js"></script>
+</body>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <form action="/action">
+        <div>
+            <label for="username">Username : </label>
+            <input type="text" placeholder="enter username" id="username" name="username">
+        </div>
+        <div>
+            <label for="password">Password : </label>
+            <input type="password" placeholder="enter password" id="password" name="password">
+        </div>
+        <div>
+            <label for="age">Enter Age: </label>
+            <input type="number" placeholder="enter age" id="age">
+        </div>
+        <button>Submit</button>
+        <button type="button">Button</button>
+        <button type="reset">reset</button>
+        <hr>
+    </form>
+    <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="search in youtube" name="search_query">
+        <button>search</button>
+    </form>
+    <hr>
+    <form action="https://www.google.com/search">
+        <input type="text" placeholder="search in google" name="q">
+        <button>search</button>
+    </form>
+    <hr>
+    <form action="https://www.amazon.in/s">
+        <input type="text" placeholder="search in amazon" name="k">
+        <button>search</button>
+    </form>
+    <hr>
+    <form action="/server">
+        <input type="checkbox" name="age" id="age">
+        <label for="age"> I am 18+ </label>
+        <button>submit</button>
+        <div>
+            <input type="radio" name="fruit" id="apple" value="apple">
+            <label for="apple">apple</label>
+            <input type="radio" name="fruit" id="mango" value="mango">
+            <label for="mango">mango</label>
+            <input type="radio" name="fruit" id="banana" value="banana">
+            <label for="banana">banana</label>
+        </div>
+        <div>
+            Choose your subject: 
+            <input type="checkbox" name="sub" id="math" value="math">
+            <label for="math">Math</label>
+            <input type="checkbox" name="sub" id="eng" value="eng">
+            <label for="eng">English</label>
+            <input type="checkbox" name="sub" id="sci" value="sci">
+            <label for="sci">Science</label>
+        </div>
+        <div>
+            Choose your Profession:
+            <select name="profession" id="profession">
+                <option >Select an option</option>
+                <option value="stu">Student</option>
+                <option value="dev" selected>Developer</option>
+            </select>
+        </div>
+        <label for="vol">Select your volume level : </label>
+        <input type="range" name="vol" id="vol">
+        <br>
+        <label for="feedback">Please Provide Valuable Feedback</label>
+        <textarea name="feedback" id="feedback" placeholder="Write your feedback
+        here"></textarea>
+        <button>submit</button>
+        <hr>
+    </form>
+    <form action="/server">
+        <h1>Registration form</h1>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <br>
+        <label for="gender">Please select Gender</label>
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        Do you agree to all terms of services?
+        <input type="checkbox" name="terms" id="terms">
+        <label for="terms"> Yes, I agree</label>
+        <br>
+        <button>Register</button>
+    </form>
+</body>
+</html>

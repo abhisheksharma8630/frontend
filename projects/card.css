@@ -1,0 +1,50 @@
+.card{
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px black;
+    transition: 1s;
+}
+.desc{
+    padding: 0px 2px;
+}
+img{
+    height: 50%;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+.card:hover{
+    box-shadow: 0px 8px 16px black;
+}
+
+#smile{
+    height: 400px;
+    width: 400px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+.lefteye,.righteye{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    display: inline-block;
+    border-radius: 50%;
+    position:absolute;
+    top: 75px;
+    left: 100px;
+}
+.righteye{
+    left: 250px;
+}
+.mouth{
+    width: 200px;
+    height: 75px;
+    background-color: brown;
+    border-radius: 0px 0px 50px 50px;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
