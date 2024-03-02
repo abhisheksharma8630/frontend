@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <% let count = 1; %>
+        <% for(let question of result){%> 
+            <p><%= count %> <%= question.ques %></p>
+            <form method="post" action="/home/new/<%= question.id %>?_method=delete">
+                <button>Delete</button>
+            </form>
+            <button class="editBtn">Edit</button>
+        <% count++; } %>
+    </div>
+    <form method="post" action="/home/new">
+            <textarea name="question" id="" cols="30" rows="5" placeholder="Enter your question here"></textarea>
+            <button id="addQues">Add Ques</button>
+    </form>
+</body>
+</html>
